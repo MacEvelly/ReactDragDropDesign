@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fe9bbea20cd5008ce3f11702b770392",
+    "revision": "2bd27f49745a2624dd0edeae57d084d0",
     "url": "/ReactDragDropDesign/index.html"
   },
   {
-    "revision": "d727143da3abdd259293",
+    "revision": "a264e52e70a2cad61a10",
     "url": "/ReactDragDropDesign/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactDragDropDesign/static/js/2.9d90d81a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d727143da3abdd259293",
-    "url": "/ReactDragDropDesign/static/js/main.5bf79174.chunk.js"
+    "revision": "a264e52e70a2cad61a10",
+    "url": "/ReactDragDropDesign/static/js/main.d21a7883.chunk.js"
   },
   {
     "revision": "1976a3eee9199a45de65",
