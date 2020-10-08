@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/ReactDragDropDesign/static/js/main.e57ee9db.chunk.js",
-    "main.js.map": "/ReactDragDropDesign/static/js/main.e57ee9db.chunk.js.map",
+    "main.css": "/ReactDragDropDesign/static/css/main.773bbc4c.chunk.css",
+    "main.js": "/ReactDragDropDesign/static/js/main.cdbb9108.chunk.js",
+    "main.js.map": "/ReactDragDropDesign/static/js/main.cdbb9108.chunk.js.map",
     "runtime-main.js": "/ReactDragDropDesign/static/js/runtime-main.fd7b92e5.js",
     "runtime-main.js.map": "/ReactDragDropDesign/static/js/runtime-main.fd7b92e5.js.map",
-    "static/js/2.0ac850ae.chunk.js": "/ReactDragDropDesign/static/js/2.0ac850ae.chunk.js",
-    "static/js/2.0ac850ae.chunk.js.map": "/ReactDragDropDesign/static/js/2.0ac850ae.chunk.js.map",
+    "static/js/2.4a9f8d64.chunk.js": "/ReactDragDropDesign/static/js/2.4a9f8d64.chunk.js",
+    "static/js/2.4a9f8d64.chunk.js.map": "/ReactDragDropDesign/static/js/2.4a9f8d64.chunk.js.map",
     "index.html": "/ReactDragDropDesign/index.html",
-    "precache-manifest.caf167fa956c69ef2bbcd27a868b0003.js": "/ReactDragDropDesign/precache-manifest.caf167fa956c69ef2bbcd27a868b0003.js",
+    "precache-manifest.663fa354f419906ce1651d9ebea6f1c3.js": "/ReactDragDropDesign/precache-manifest.663fa354f419906ce1651d9ebea6f1c3.js",
     "service-worker.js": "/ReactDragDropDesign/service-worker.js",
-    "static/js/2.0ac850ae.chunk.js.LICENSE.txt": "/ReactDragDropDesign/static/js/2.0ac850ae.chunk.js.LICENSE.txt"
+    "static/css/main.773bbc4c.chunk.css.map": "/ReactDragDropDesign/static/css/main.773bbc4c.chunk.css.map",
+    "static/js/2.4a9f8d64.chunk.js.LICENSE.txt": "/ReactDragDropDesign/static/js/2.4a9f8d64.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fd7b92e5.js",
-    "static/js/2.0ac850ae.chunk.js",
-    "static/js/main.e57ee9db.chunk.js"
+    "static/js/2.4a9f8d64.chunk.js",
+    "static/css/main.773bbc4c.chunk.css",
+    "static/js/main.cdbb9108.chunk.js"
   ]
 }
