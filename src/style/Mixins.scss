@@ -1,0 +1,10 @@
+@import "./Variables.scss";
+@mixin flexCenter {
+    display: gird;
+    justify-content: center;
+    align-items: center;
+}
+@mixin thumbNail {
+    height: $thumbHeight;
+    width: $thumbWidth;
+}

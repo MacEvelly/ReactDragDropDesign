@@ -1,0 +1,31 @@
+export const folder = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/";
+export const images = [
+  "DD_01.png",
+  "DD_02.png",
+  "DD_03.png",
+  "DD_04.png",
+  "DD_05.png",
+  "DD_06.png",
+  "DD_07.png",
+  "DD_08.png",
+  "DD_09.png",
+  "DD_10.png",
+  "DD_11.png",
+  "DD_12.png",
+  "DD_13.png",
+  "DD_14.png",
+  "DD_15.png",
+  "DD_16.png",
+  "DD_17.png",
+  "DD_18.png",
+  "DD_19.png",
+  "DD_20.png",
+  "DD_21.png",
+  "DD_22.png",
+  "DD_23.png",
+  "DD_24.png",
+  "DD_25.png",
+  "DD_26.png",
+];
+export const imgPaths = () => images.map( (img, i) => ({ id:i, path:folder+img }) )  
+export const getImg = (id) => imgPaths.find( (e) => e.id === id);

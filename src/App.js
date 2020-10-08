@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
+import DesignSection from "./components/DesignSection"
+import "./style/App.scss"
 
-function App() {
-  return (
-    <div className="App">
-      Setting and Cleaning Up App
-    </div>
-  );
-}
+const App = () => <DesignSection/>
 
 export default App;
