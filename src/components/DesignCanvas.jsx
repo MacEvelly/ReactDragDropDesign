@@ -1,15 +1,20 @@
 import React, { useState, useContext, useEffect } from "react";
 import Moveable from "react-moveable";
 import DesignEditable from "./DesignEditable"
+//import useLocalStorage from "./useLocalStorage"
 import { DroppedElement } from "./DroppedContext"
-import { imgPaths } from "../data/DesignImages"
-
+//import { imgPaths } from "../data/DesignImages"
 
 export default function DesignCanvas(){
 
-    const [dropArr   , setDropArr   ] = useState([])
-    const [selected  , setSelected  ] = useState();
-    const [tempFrame , setTempFrame ] = useState();
+    const [dropArr     , setDropArr     ] = useState([])
+    const [selected    , setSelected    ] = useState();
+    const [tempFrame   , setTempFrame   ] = useState();
+
+    /*
+    const [droppedLocal, setDroppedLocal] = useLocalStorage('dropped', '')
+    console.log(droppedLocal)
+    */
 
     const {dropped} = useContext(DroppedElement);
     const DesignEditableArr = dropArr.map( DE => <DesignEditable key={DE.id} id={DE.id} path={DE.path} frame={DE.frame} set={setSelected}/> )
@@ -53,6 +58,7 @@ export default function DesignCanvas(){
     const thisEndEvent = (e)=>{
       e.target.setAttribute('data-frame', `${tempFrame.translate[0]},${tempFrame.translate[1]},${tempFrame.scale[0]},${tempFrame.rotate}`)
     };
+    console.count("stage")
     return (
       <div className="designCanvas">
           <Moveable

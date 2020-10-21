@@ -1,4 +1,4 @@
-export const folder = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/";
+export const folder = process.env.PUBLIC_URL+"/designImages/";
 export const images = [
   "DD_01.png",
   "DD_02.png",

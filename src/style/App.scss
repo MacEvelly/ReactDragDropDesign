@@ -2,7 +2,10 @@
 @import "./Mixins.scss";
 
 .DesignSection {
-  padding:20px;
+  padding:$padding;
+  gap:$gap;
+  display: grid;
+  grid-template-columns: $stageWidth 1fr;
   
   .designCanvas {
     display: block;
@@ -14,19 +17,28 @@
     overflow: hidden;
   }
 
+  .buttonHolder{
+    padding: $padding;
+    grid-column: 1 / -1;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
   .designToolbox {
-    gap: 5px;
+    background-color: rgba(0,0,0,0.1);
+    gap: $gap;
     width: 100%;
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 15px;
+    padding: $padding;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax($thumbWidth, 1fr));
+    grid-auto-rows: auto;
+    align-content: start;
     -webkit-box-pack: justify;
     justify-content: space-between;
-
+    
     .dragHome {
       position: relative;
       border: 1px solid black;
@@ -36,18 +48,19 @@
 }
 
 .draggable {
-  display: block;
   box-sizing: border-box;
   position: absolute;
   @include thumbNail;
+  @include flexCenter;
 
   img {
     display: block;
     box-sizing: border-box;
     pointer-events: none;
-    padding: 5px;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    padding: $padding;
+    height: auto;
+    width: auto;
+    max-height: $thumbHeight;
+    max-width: $thumbWidth;
   }
 }

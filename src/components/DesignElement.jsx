@@ -1,13 +1,15 @@
 import React, { useRef, useState, useContext } from "react";
 import { motion } from "framer-motion";
 import {DroppedElement} from "./DroppedContext"
+import useLocalStorage from "./useLocalStorage"
 
-export default function DesignElement({id, path}) {
-    
+export default function DesignElement({id, path}) {  
+    const [droppedLocal, setDroppedLocal] = useLocalStorage('dropped', '')
     const {setDropped}  = useContext(DroppedElement);
     const [idNum, setIdNum] = useState(0);
     const refillParent  = useRef(null);
     const designElement = useRef(null);
+
     function dragStart(e, i) {
       if (designElement.current.parentElement === refillParent.current){
         var target = designElement.current
@@ -34,7 +36,10 @@ export default function DesignElement({id, path}) {
       var myY = (dropOffset.top  + window.scrollY  ) - ( stageOffset.top + window.scrollY  )  
       var myX = (dropOffset.left + window.scrollX  ) - ( stageOffset.left + window.scrollX )
       // add({id:id, frame: [myX, myY, 1, 0]});
-      setDropped({id:Date.now(), imageId:id, path:path, frame: [myX, myY, 1, 0]})
+      var droppedVar = {id:Date.now(), imageId:id, path:path, frame: [myX, myY, 1, 0]}
+      //
+      setDroppedLocal(droppedVar)
+      setDropped(droppedVar)
       //setDropped({id:id, frame: [myX, myY, 1, 0]})
     }
   
